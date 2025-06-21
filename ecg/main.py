@@ -22,6 +22,7 @@ def main():
     num_classes = 2
     label_file = 'ptb_fold.csv'
     data_dir = '../'
+    split_ratio = 0.8   
     model_name = 'MCDANN'  # <-- Set your model class name here
     model_module = importlib.import_module(f'ECGModel.{model_name}')
     ModelClass = getattr(model_module, model_name)
@@ -44,7 +45,7 @@ def main():
             fold_test=current,
             batch_size=batch_size,
             num_workers=num_workers,
-            split_ratio=0.9
+            split_ratio=split_ratio
         )
         dataloader.setup()
         
