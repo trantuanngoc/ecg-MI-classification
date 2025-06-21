@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import lightning as L
 import torchmetrics
-from torch.optim.lr_scheduler import CosineAnnealingLR
+
 class SEBlock(nn.Module):
     def __init__(self, in_channels, reduction=16):
         super(SEBlock, self).__init__()
@@ -22,7 +22,7 @@ class SEBlock(nn.Module):
         return x * y
 
 class DenseBlock(nn.Module):
-    def __init__(self, in_channels, growth_rate=8, kernel_sizes=[5,3]):
+    def __init__(self, in_channels, growth_rate=8, kernel_sizes=[7, 5]):
         super().__init__()
         self.lrelu = nn.LeakyReLU(0.01)
         self.bn1 = nn.BatchNorm1d(in_channels)
@@ -66,8 +66,8 @@ class DACB(nn.Module):
         super(DACB, self).__init__()
         self.conv1 = nn.Conv1d(1, 16, kernel_size=7, padding=3)
         # Dense Layers
-        self.dense1 = DenseBlock(16)
-        self.transition1 = TransitionLayer(32)
+        self.dense1 = DenseBlock(1)
+        self.transition1 = TransitionLayer(17)
         self.se1 = SEBlock(64)
 
         self.dense2 = DenseBlock(64)
@@ -75,7 +75,7 @@ class DACB(nn.Module):
         self.se2 = SEBlock(64)
 
         self.skip = nn.Sequential(
-            nn.Conv1d(16, 64, kernel_size=1),  
+            nn.Conv1d(1, 64, kernel_size=1),  
             nn.BatchNorm1d(64), 
             nn.LeakyReLU(0.01)
         )
@@ -83,13 +83,12 @@ class DACB(nn.Module):
         self.gap = nn.AdaptiveAvgPool1d(1)
 
     def forward(self, x):
-        x = self.conv1(x)
         d = self.dense1(x)
         d = self.transition1(d)
-        # d = self.se1(d)
+        d = self.se1(d)
         d = self.dense2(d)
         d = self.transition2(d)
-        # d = self.se2(d)
+        d = self.se2(d)
         
         skip = self.skip(x)
         out = self.lrelu(torch.cat((d, skip), dim=2))
@@ -104,19 +103,15 @@ class MCDANNNet(nn.Module):
         self.classifier = nn.Sequential(
             nn.Linear(64 * 12, num_classes)
         )
-        self.se3 = SEBlock(12)
 
     def forward(self, x):
         # x shape: (batch, 12, 300)
-        batch_size = x.size(0)
         features = []
         for i, channel in enumerate(self.channels):
             lead = x[:, i, :].unsqueeze(1)  # (batch, 1, 300)
             feat = channel(lead).squeeze(-1)  # (batch, 64)
             features.append(feat)
-        features = torch.stack(features, dim=1)  # (batch, 12, 64)
-        features = self.se3(features)
-        combined = features.view(batch_size, 12 * 64)  # (batch, 768)
+        combined = torch.cat(features, dim=1)  # (batch, 64*12)
         return self.classifier(combined)
 
 class MCDANN(L.LightningModule):
@@ -161,6 +156,4 @@ class MCDANN(L.LightningModule):
 
 
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=self.learning_rate)  
-        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.trainer.max_epochs)
-        return [optimizer], [scheduler]
+        return torch.optim.Adam(self.parameters(), lr=self.learning_rate)
