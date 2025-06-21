@@ -86,10 +86,10 @@ class DACB(nn.Module):
         x = self.conv1(x)
         d = self.dense1(x)
         d = self.transition1(d)
-        # d = self.se1(d)
+        d = self.se1(d)
         d = self.dense2(d)
         d = self.transition2(d)
-        # d = self.se2(d)
+        d = self.se2(d)
         
         skip = self.skip(x)
         out = self.lrelu(torch.cat((d, skip), dim=2))
