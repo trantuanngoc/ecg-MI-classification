@@ -104,7 +104,6 @@ class MCDANNNet(nn.Module):
         self.classifier = nn.Sequential(
             nn.Linear(64 * 12, num_classes)
         )
-        self.se3 = SEBlock(12)
 
     def forward(self, x):
         # x shape: (batch, 12, 300)
