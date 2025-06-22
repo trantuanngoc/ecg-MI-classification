@@ -63,7 +63,7 @@ def main():
             max_epochs=num_epochs,
             accelerator='auto',
             devices=1,
-            callbacks=[checkpoint_callback, StochasticWeightAveraging(swa_lrs=1e-2)]
+            callbacks=[checkpoint_callback, StochasticWeightAveraging(swa_lrs=1e-3)]
         )
 
         trainer.fit(model, dataloader.train_dataloader(), dataloader.val_dataloader())
