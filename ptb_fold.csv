@@ -829,7 +829,6 @@ patient_number,pt_path,label,subtype,fold
 4,processed_ptb/004/s0020bre/beat151.pt,MI,ASMI,0
 4,processed_ptb/004/s0020bre/beat152.pt,MI,ASMI,0
 4,processed_ptb/004/s0020bre/beat153.pt,MI,ASMI,0
-4,processed_ptb/004/s0020bre/beat154.pt,MI,ASMI,0
 5,processed_ptb/005/s0021are/beat0.pt,MI,AMI,1
 5,processed_ptb/005/s0021are/beat1.pt,MI,AMI,1
 5,processed_ptb/005/s0021are/beat2.pt,MI,AMI,1
@@ -1195,7 +1194,6 @@ patient_number,pt_path,label,subtype,fold
 5,processed_ptb/005/s0021bre/beat178.pt,MI,AMI,1
 5,processed_ptb/005/s0021bre/beat179.pt,MI,AMI,1
 5,processed_ptb/005/s0021bre/beat180.pt,MI,AMI,1
-5,processed_ptb/005/s0021bre/beat181.pt,MI,AMI,1
 5,processed_ptb/005/s0025lre/beat0.pt,MI,AMI,1
 5,processed_ptb/005/s0025lre/beat1.pt,MI,AMI,1
 5,processed_ptb/005/s0025lre/beat2.pt,MI,AMI,1
@@ -1567,8 +1565,6 @@ patient_number,pt_path,label,subtype,fold
 5,processed_ptb/005/s0031lre/beat171.pt,MI,AMI,1
 5,processed_ptb/005/s0031lre/beat172.pt,MI,AMI,1
 5,processed_ptb/005/s0031lre/beat173.pt,MI,AMI,1
-5,processed_ptb/005/s0031lre/beat174.pt,MI,AMI,1
-5,processed_ptb/005/s0031lre/beat175.pt,MI,AMI,1
 5,processed_ptb/005/s0101lre/beat0.pt,MI,AMI,1
 5,processed_ptb/005/s0101lre/beat1.pt,MI,AMI,1
 5,processed_ptb/005/s0101lre/beat2.pt,MI,AMI,1
@@ -1692,8 +1688,6 @@ patient_number,pt_path,label,subtype,fold
 5,processed_ptb/005/s0101lre/beat120.pt,MI,AMI,1
 5,processed_ptb/005/s0101lre/beat121.pt,MI,AMI,1
 5,processed_ptb/005/s0101lre/beat122.pt,MI,AMI,1
-5,processed_ptb/005/s0101lre/beat123.pt,MI,AMI,1
-5,processed_ptb/005/s0101lre/beat124.pt,MI,AMI,1
 6,processed_ptb/006/s0022lre/beat0.pt,MI,AMI,3
 6,processed_ptb/006/s0022lre/beat1.pt,MI,AMI,3
 6,processed_ptb/006/s0022lre/beat2.pt,MI,AMI,3
@@ -2915,7 +2909,6 @@ patient_number,pt_path,label,subtype,fold
 8,processed_ptb/008/s0037lre/beat119.pt,MI,IMI,1
 8,processed_ptb/008/s0037lre/beat120.pt,MI,IMI,1
 8,processed_ptb/008/s0037lre/beat121.pt,MI,IMI,1
-8,processed_ptb/008/s0037lre/beat122.pt,MI,IMI,1
 8,processed_ptb/008/s0068lre/beat0.pt,MI,IMI,1
 8,processed_ptb/008/s0068lre/beat1.pt,MI,IMI,1
 8,processed_ptb/008/s0068lre/beat2.pt,MI,IMI,1
@@ -6015,7 +6008,6 @@ patient_number,pt_path,label,subtype,fold
 16,processed_ptb/016/s0060lre/beat136.pt,MI,ILMI,1
 16,processed_ptb/016/s0060lre/beat137.pt,MI,ILMI,1
 16,processed_ptb/016/s0060lre/beat138.pt,MI,ILMI,1
-16,processed_ptb/016/s0060lre/beat139.pt,MI,ILMI,1
 16,processed_ptb/016/s0076lre/beat0.pt,MI,ILMI,1
 16,processed_ptb/016/s0076lre/beat1.pt,MI,ILMI,1
 16,processed_ptb/016/s0076lre/beat2.pt,MI,ILMI,1
@@ -7285,7 +7277,6 @@ patient_number,pt_path,label,subtype,fold
 20,processed_ptb/020/s0062lre/beat120.pt,MI,AMI,3
 20,processed_ptb/020/s0062lre/beat121.pt,MI,AMI,3
 20,processed_ptb/020/s0062lre/beat122.pt,MI,AMI,3
-20,processed_ptb/020/s0062lre/beat123.pt,MI,AMI,3
 20,processed_ptb/020/s0069lre/beat0.pt,MI,AMI,3
 20,processed_ptb/020/s0069lre/beat1.pt,MI,AMI,3
 20,processed_ptb/020/s0069lre/beat2.pt,MI,AMI,3
@@ -7836,7 +7827,6 @@ patient_number,pt_path,label,subtype,fold
 21,processed_ptb/021/s0073lre/beat174.pt,MI,IMI,3
 21,processed_ptb/021/s0073lre/beat175.pt,MI,IMI,3
 21,processed_ptb/021/s0073lre/beat176.pt,MI,IMI,3
-21,processed_ptb/021/s0073lre/beat177.pt,MI,IMI,3
 21,processed_ptb/021/s0097lre/beat0.pt,MI,IMI,3
 21,processed_ptb/021/s0097lre/beat1.pt,MI,IMI,3
 21,processed_ptb/021/s0097lre/beat2.pt,MI,IMI,3
@@ -8012,7 +8002,6 @@ patient_number,pt_path,label,subtype,fold
 21,processed_ptb/021/s0097lre/beat172.pt,MI,IMI,3
 21,processed_ptb/021/s0097lre/beat173.pt,MI,IMI,3
 21,processed_ptb/021/s0097lre/beat174.pt,MI,IMI,3
-21,processed_ptb/021/s0097lre/beat175.pt,MI,IMI,3
 22,processed_ptb/022/s0066lre/beat0.pt,MI,ILMI,2
 22,processed_ptb/022/s0066lre/beat1.pt,MI,ILMI,2
 22,processed_ptb/022/s0066lre/beat2.pt,MI,ILMI,2
@@ -9348,7 +9337,6 @@ patient_number,pt_path,label,subtype,fold
 24,processed_ptb/024/s0094lre/beat146.pt,MI,ASMI,3
 24,processed_ptb/024/s0094lre/beat147.pt,MI,ASMI,3
 24,processed_ptb/024/s0094lre/beat148.pt,MI,ASMI,3
-24,processed_ptb/024/s0094lre/beat149.pt,MI,ASMI,3
 25,processed_ptb/025/s0087lre/beat0.pt,MI,ASMI,3
 25,processed_ptb/025/s0087lre/beat1.pt,MI,ASMI,3
 25,processed_ptb/025/s0087lre/beat2.pt,MI,ASMI,3
@@ -10601,7 +10589,6 @@ patient_number,pt_path,label,subtype,fold
 27,processed_ptb/027/s0151lre/beat160.pt,MI,ALMI,2
 27,processed_ptb/027/s0151lre/beat161.pt,MI,ALMI,2
 27,processed_ptb/027/s0151lre/beat162.pt,MI,ALMI,2
-27,processed_ptb/027/s0151lre/beat163.pt,MI,ALMI,2
 28,processed_ptb/028/s0090lre/beat0.pt,MI,AMI,4
 28,processed_ptb/028/s0090lre/beat1.pt,MI,AMI,4
 28,processed_ptb/028/s0090lre/beat2.pt,MI,AMI,4
@@ -11098,7 +11085,6 @@ patient_number,pt_path,label,subtype,fold
 29,processed_ptb/029/s0092lre/beat182.pt,MI,ASMI,0
 29,processed_ptb/029/s0092lre/beat183.pt,MI,ASMI,0
 29,processed_ptb/029/s0092lre/beat184.pt,MI,ASMI,0
-29,processed_ptb/029/s0092lre/beat185.pt,MI,ASMI,0
 29,processed_ptb/029/s0098lre/beat0.pt,MI,ASMI,0
 29,processed_ptb/029/s0098lre/beat1.pt,MI,ASMI,0
 29,processed_ptb/029/s0098lre/beat2.pt,MI,ASMI,0
@@ -12122,7 +12108,6 @@ patient_number,pt_path,label,subtype,fold
 31,processed_ptb/031/s0100lre/beat176.pt,MI,IMI,2
 31,processed_ptb/031/s0100lre/beat177.pt,MI,IMI,2
 31,processed_ptb/031/s0100lre/beat178.pt,MI,IMI,2
-31,processed_ptb/031/s0100lre/beat179.pt,MI,IMI,2
 31,processed_ptb/031/s0104lre/beat0.pt,MI,IMI,2
 31,processed_ptb/031/s0104lre/beat1.pt,MI,IMI,2
 31,processed_ptb/031/s0104lre/beat2.pt,MI,IMI,2
@@ -12462,7 +12447,6 @@ patient_number,pt_path,label,subtype,fold
 31,processed_ptb/031/s0114lre/beat169.pt,MI,IMI,2
 31,processed_ptb/031/s0114lre/beat170.pt,MI,IMI,2
 31,processed_ptb/031/s0114lre/beat171.pt,MI,IMI,2
-31,processed_ptb/031/s0114lre/beat172.pt,MI,IMI,2
 31,processed_ptb/031/s0127lre/beat0.pt,MI,IMI,2
 31,processed_ptb/031/s0127lre/beat1.pt,MI,IMI,2
 31,processed_ptb/031/s0127lre/beat2.pt,MI,IMI,2
@@ -12973,7 +12957,6 @@ patient_number,pt_path,label,subtype,fold
 32,processed_ptb/032/s0106lre/beat167.pt,MI,ASMI,4
 32,processed_ptb/032/s0106lre/beat168.pt,MI,ASMI,4
 32,processed_ptb/032/s0106lre/beat169.pt,MI,ASMI,4
-32,processed_ptb/032/s0106lre/beat170.pt,MI,ASMI,4
 32,processed_ptb/032/s0115lre/beat0.pt,MI,ASMI,4
 32,processed_ptb/032/s0115lre/beat1.pt,MI,ASMI,4
 32,processed_ptb/032/s0115lre/beat2.pt,MI,ASMI,4
@@ -15181,7 +15164,6 @@ patient_number,pt_path,label,subtype,fold
 35,processed_ptb/035/s0145lre/beat164.pt,MI,IMI,1
 35,processed_ptb/035/s0145lre/beat165.pt,MI,IMI,1
 35,processed_ptb/035/s0145lre/beat166.pt,MI,IMI,1
-35,processed_ptb/035/s0145lre/beat167.pt,MI,IMI,1
 36,processed_ptb/036/s0111lre/beat0.pt,MI,ASMI,0
 36,processed_ptb/036/s0111lre/beat1.pt,MI,ASMI,0
 36,processed_ptb/036/s0111lre/beat2.pt,MI,ASMI,0
@@ -17821,7 +17803,6 @@ patient_number,pt_path,label,subtype,fold
 41,processed_ptb/041/s0138lre/beat155.pt,MI,ILMI,3
 41,processed_ptb/041/s0138lre/beat156.pt,MI,ILMI,3
 41,processed_ptb/041/s0138lre/beat157.pt,MI,ILMI,3
-41,processed_ptb/041/s0138lre/beat158.pt,MI,ILMI,3
 41,processed_ptb/041/s0276lre/beat0.pt,MI,ILMI,3
 41,processed_ptb/041/s0276lre/beat1.pt,MI,ILMI,3
 41,processed_ptb/041/s0276lre/beat2.pt,MI,ILMI,3
@@ -19858,7 +19839,6 @@ patient_number,pt_path,label,subtype,fold
 45,processed_ptb/045/s0217lre/beat159.pt,MI,ILMI,4
 45,processed_ptb/045/s0217lre/beat160.pt,MI,ILMI,4
 45,processed_ptb/045/s0217lre/beat161.pt,MI,ILMI,4
-45,processed_ptb/045/s0217lre/beat162.pt,MI,ILMI,4
 46,processed_ptb/046/s0156lre/beat0.pt,MI,ASMI,3
 46,processed_ptb/046/s0156lre/beat1.pt,MI,ASMI,3
 46,processed_ptb/046/s0156lre/beat2.pt,MI,ASMI,3
@@ -20419,7 +20399,6 @@ patient_number,pt_path,label,subtype,fold
 46,processed_ptb/046/s0168lre/beat168.pt,MI,ASMI,3
 46,processed_ptb/046/s0168lre/beat169.pt,MI,ASMI,3
 46,processed_ptb/046/s0168lre/beat170.pt,MI,ASMI,3
-46,processed_ptb/046/s0168lre/beat171.pt,MI,ASMI,3
 46,processed_ptb/046/s0184lre/beat0.pt,MI,ASMI,3
 46,processed_ptb/046/s0184lre/beat1.pt,MI,ASMI,3
 46,processed_ptb/046/s0184lre/beat2.pt,MI,ASMI,3
@@ -20565,7 +20544,6 @@ patient_number,pt_path,label,subtype,fold
 46,processed_ptb/046/s0184lre/beat142.pt,MI,ASMI,3
 46,processed_ptb/046/s0184lre/beat143.pt,MI,ASMI,3
 46,processed_ptb/046/s0184lre/beat144.pt,MI,ASMI,3
-46,processed_ptb/046/s0184lre/beat145.pt,MI,ASMI,3
 47,processed_ptb/047/s0160lre/beat0.pt,MI,ASMI,4
 47,processed_ptb/047/s0160lre/beat1.pt,MI,ASMI,4
 47,processed_ptb/047/s0160lre/beat2.pt,MI,ASMI,4
@@ -21581,7 +21559,6 @@ patient_number,pt_path,label,subtype,fold
 48,processed_ptb/048/s0277lre/beat124.pt,MI,ALMI,3
 48,processed_ptb/048/s0277lre/beat125.pt,MI,ALMI,3
 48,processed_ptb/048/s0277lre/beat126.pt,MI,ALMI,3
-48,processed_ptb/048/s0277lre/beat127.pt,MI,ALMI,3
 49,processed_ptb/049/s0173lre/beat0.pt,MI,IMI,0
 49,processed_ptb/049/s0173lre/beat1.pt,MI,IMI,0
 49,processed_ptb/049/s0173lre/beat2.pt,MI,IMI,0
@@ -21730,7 +21707,6 @@ patient_number,pt_path,label,subtype,fold
 49,processed_ptb/049/s0173lre/beat145.pt,MI,IMI,0
 49,processed_ptb/049/s0173lre/beat146.pt,MI,IMI,0
 49,processed_ptb/049/s0173lre/beat147.pt,MI,IMI,0
-49,processed_ptb/049/s0173lre/beat148.pt,MI,IMI,0
 49,processed_ptb/049/s0178lre/beat0.pt,MI,IMI,0
 49,processed_ptb/049/s0178lre/beat1.pt,MI,IMI,0
 49,processed_ptb/049/s0178lre/beat2.pt,MI,IMI,0
@@ -21876,7 +21852,6 @@ patient_number,pt_path,label,subtype,fold
 49,processed_ptb/049/s0178lre/beat142.pt,MI,IMI,0
 49,processed_ptb/049/s0178lre/beat143.pt,MI,IMI,0
 49,processed_ptb/049/s0178lre/beat144.pt,MI,IMI,0
-49,processed_ptb/049/s0178lre/beat145.pt,MI,IMI,0
 49,processed_ptb/049/s0186lre/beat0.pt,MI,IMI,0
 49,processed_ptb/049/s0186lre/beat1.pt,MI,IMI,0
 49,processed_ptb/049/s0186lre/beat2.pt,MI,IMI,0
@@ -22000,7 +21975,6 @@ patient_number,pt_path,label,subtype,fold
 49,processed_ptb/049/s0186lre/beat120.pt,MI,IMI,0
 49,processed_ptb/049/s0186lre/beat121.pt,MI,IMI,0
 49,processed_ptb/049/s0186lre/beat122.pt,MI,IMI,0
-49,processed_ptb/049/s0186lre/beat123.pt,MI,IMI,0
 49,processed_ptb/049/s0314lre/beat0.pt,MI,IMI,0
 49,processed_ptb/049/s0314lre/beat1.pt,MI,IMI,0
 49,processed_ptb/049/s0314lre/beat2.pt,MI,IMI,0
@@ -22139,7 +22113,6 @@ patient_number,pt_path,label,subtype,fold
 49,processed_ptb/049/s0314lre/beat135.pt,MI,IMI,0
 49,processed_ptb/049/s0314lre/beat136.pt,MI,IMI,0
 49,processed_ptb/049/s0314lre/beat137.pt,MI,IMI,0
-49,processed_ptb/049/s0314lre/beat138.pt,MI,IMI,0
 50,processed_ptb/050/s0174lre/beat0.pt,MI,IMI,1
 50,processed_ptb/050/s0174lre/beat1.pt,MI,IMI,1
 50,processed_ptb/050/s0174lre/beat2.pt,MI,IMI,1
@@ -24307,7 +24280,6 @@ patient_number,pt_path,label,subtype,fold
 55,processed_ptb/055/s0194lre/beat197.pt,MI,ILMI,2
 55,processed_ptb/055/s0194lre/beat198.pt,MI,ILMI,2
 55,processed_ptb/055/s0194lre/beat199.pt,MI,ILMI,2
-55,processed_ptb/055/s0194lre/beat200.pt,MI,ILMI,2
 56,processed_ptb/056/s0196lre/beat0.pt,MI,AMI,2
 56,processed_ptb/056/s0196lre/beat1.pt,MI,AMI,2
 56,processed_ptb/056/s0196lre/beat2.pt,MI,AMI,2
@@ -24436,7 +24408,6 @@ patient_number,pt_path,label,subtype,fold
 56,processed_ptb/056/s0196lre/beat125.pt,MI,AMI,2
 56,processed_ptb/056/s0196lre/beat126.pt,MI,AMI,2
 56,processed_ptb/056/s0196lre/beat127.pt,MI,AMI,2
-56,processed_ptb/056/s0196lre/beat128.pt,MI,AMI,2
 57,processed_ptb/057/s0198lre/beat0.pt,MI,IMI,3
 57,processed_ptb/057/s0198lre/beat1.pt,MI,IMI,3
 57,processed_ptb/057/s0198lre/beat2.pt,MI,IMI,3
@@ -26201,7 +26172,6 @@ patient_number,pt_path,label,subtype,fold
 67,processed_ptb/067/s0227lre/beat265.pt,MI,ILMI,2
 67,processed_ptb/067/s0227lre/beat266.pt,MI,ILMI,2
 67,processed_ptb/067/s0227lre/beat267.pt,MI,ILMI,2
-67,processed_ptb/067/s0227lre/beat268.pt,MI,ILMI,2
 67,processed_ptb/067/s0230lre/beat0.pt,MI,ILMI,2
 67,processed_ptb/067/s0230lre/beat1.pt,MI,ILMI,2
 67,processed_ptb/067/s0230lre/beat2.pt,MI,ILMI,2
@@ -26374,8 +26344,6 @@ patient_number,pt_path,label,subtype,fold
 67,processed_ptb/067/s0230lre/beat169.pt,MI,ILMI,2
 67,processed_ptb/067/s0230lre/beat170.pt,MI,ILMI,2
 67,processed_ptb/067/s0230lre/beat171.pt,MI,ILMI,2
-67,processed_ptb/067/s0230lre/beat172.pt,MI,ILMI,2
-67,processed_ptb/067/s0230lre/beat173.pt,MI,ILMI,2
 67,processed_ptb/067/s0283lre/beat0.pt,MI,ILMI,2
 67,processed_ptb/067/s0283lre/beat1.pt,MI,ILMI,2
 67,processed_ptb/067/s0283lre/beat2.pt,MI,ILMI,2
@@ -28430,7 +28398,6 @@ patient_number,pt_path,label,subtype,fold
 73,processed_ptb/073/s0252lre/beat116.pt,MI,ALMI,4
 73,processed_ptb/073/s0252lre/beat117.pt,MI,ALMI,4
 73,processed_ptb/073/s0252lre/beat118.pt,MI,ALMI,4
-73,processed_ptb/073/s0252lre/beat119.pt,MI,ALMI,4
 74,processed_ptb/074/s0239lre/beat0.pt,MI,ILMI,0
 74,processed_ptb/074/s0239lre/beat1.pt,MI,ILMI,0
 74,processed_ptb/074/s0239lre/beat2.pt,MI,ILMI,0
@@ -28641,7 +28608,6 @@ patient_number,pt_path,label,subtype,fold
 74,processed_ptb/074/s0239lre/beat207.pt,MI,ILMI,0
 74,processed_ptb/074/s0239lre/beat208.pt,MI,ILMI,0
 74,processed_ptb/074/s0239lre/beat209.pt,MI,ILMI,0
-74,processed_ptb/074/s0239lre/beat210.pt,MI,ILMI,0
 74,processed_ptb/074/s0241lre/beat0.pt,MI,ILMI,0
 74,processed_ptb/074/s0241lre/beat1.pt,MI,ILMI,0
 74,processed_ptb/074/s0241lre/beat2.pt,MI,ILMI,0
@@ -30614,7 +30580,6 @@ patient_number,pt_path,label,subtype,fold
 77,processed_ptb/077/s0251lre/beat219.pt,MI,IMI,4
 77,processed_ptb/077/s0251lre/beat220.pt,MI,IMI,4
 77,processed_ptb/077/s0251lre/beat221.pt,MI,IMI,4
-77,processed_ptb/077/s0251lre/beat222.pt,MI,IMI,4
 77,processed_ptb/077/s0254lre/beat0.pt,MI,IMI,4
 77,processed_ptb/077/s0254lre/beat1.pt,MI,IMI,4
 77,processed_ptb/077/s0254lre/beat2.pt,MI,IMI,4
@@ -31668,7 +31633,6 @@ patient_number,pt_path,label,subtype,fold
 78,processed_ptb/078/s0317lre/beat155.pt,MI,IMI,3
 78,processed_ptb/078/s0317lre/beat156.pt,MI,IMI,3
 78,processed_ptb/078/s0317lre/beat157.pt,MI,IMI,3
-78,processed_ptb/078/s0317lre/beat158.pt,MI,IMI,3
 81,processed_ptb/081/s0264lre/beat0.pt,MI,AMI,0
 81,processed_ptb/081/s0264lre/beat1.pt,MI,AMI,0
 81,processed_ptb/081/s0264lre/beat2.pt,MI,AMI,0
@@ -32639,7 +32603,6 @@ patient_number,pt_path,label,subtype,fold
 82,processed_ptb/082/s0279lre/beat106.pt,MI,ASMI,2
 82,processed_ptb/082/s0279lre/beat107.pt,MI,ASMI,2
 82,processed_ptb/082/s0279lre/beat108.pt,MI,ASMI,2
-82,processed_ptb/082/s0279lre/beat109.pt,MI,ASMI,2
 82,processed_ptb/082/s0320lre/beat0.pt,MI,ASMI,2
 82,processed_ptb/082/s0320lre/beat1.pt,MI,ASMI,2
 82,processed_ptb/082/s0320lre/beat2.pt,MI,ASMI,2
@@ -33326,7 +33289,6 @@ patient_number,pt_path,label,subtype,fold
 83,processed_ptb/083/s0290lre/beat115.pt,MI,AMI,4
 83,processed_ptb/083/s0290lre/beat116.pt,MI,AMI,4
 83,processed_ptb/083/s0290lre/beat117.pt,MI,AMI,4
-83,processed_ptb/083/s0290lre/beat118.pt,MI,AMI,4
 84,processed_ptb/084/s0281lre/beat0.pt,MI,ASMI,4
 84,processed_ptb/084/s0281lre/beat1.pt,MI,ASMI,4
 84,processed_ptb/084/s0281lre/beat2.pt,MI,ASMI,4
@@ -33863,7 +33825,6 @@ patient_number,pt_path,label,subtype,fold
 84,processed_ptb/084/s0313lre/beat112.pt,MI,ASMI,4
 84,processed_ptb/084/s0313lre/beat113.pt,MI,ASMI,4
 84,processed_ptb/084/s0313lre/beat114.pt,MI,ASMI,4
-84,processed_ptb/084/s0313lre/beat115.pt,MI,ASMI,4
 86,processed_ptb/086/s0316lre/beat0.pt,MI,ILMI,3
 86,processed_ptb/086/s0316lre/beat1.pt,MI,ILMI,3
 86,processed_ptb/086/s0316lre/beat2.pt,MI,ILMI,3
@@ -36223,7 +36184,6 @@ patient_number,pt_path,label,subtype,fold
 91,processed_ptb/091/s0408lre/beat137.pt,MI,ASMI,0
 91,processed_ptb/091/s0408lre/beat138.pt,MI,ASMI,0
 91,processed_ptb/091/s0408lre/beat139.pt,MI,ASMI,0
-91,processed_ptb/091/s0408lre/beat140.pt,MI,ASMI,0
 92,processed_ptb/092/s0354lre/beat0.pt,MI,IMI,4
 92,processed_ptb/092/s0354lre/beat1.pt,MI,IMI,4
 92,processed_ptb/092/s0354lre/beat2.pt,MI,IMI,4
@@ -37743,7 +37703,6 @@ patient_number,pt_path,label,subtype,fold
 94,processed_ptb/094/s0368lre/beat211.pt,MI,ALMI,2
 94,processed_ptb/094/s0368lre/beat212.pt,MI,ALMI,2
 94,processed_ptb/094/s0368lre/beat213.pt,MI,ALMI,2
-94,processed_ptb/094/s0368lre/beat214.pt,MI,ALMI,2
 94,processed_ptb/094/s0370lre/beat0.pt,MI,ALMI,2
 94,processed_ptb/094/s0370lre/beat1.pt,MI,ALMI,2
 94,processed_ptb/094/s0370lre/beat2.pt,MI,ALMI,2
@@ -38615,7 +38574,6 @@ patient_number,pt_path,label,subtype,fold
 95,processed_ptb/095/s0373lre/beat116.pt,MI,IMI,2
 95,processed_ptb/095/s0373lre/beat117.pt,MI,IMI,2
 95,processed_ptb/095/s0373lre/beat118.pt,MI,IMI,2
-95,processed_ptb/095/s0373lre/beat119.pt,MI,IMI,2
 95,processed_ptb/095/s0377lre/beat0.pt,MI,IMI,2
 95,processed_ptb/095/s0377lre/beat1.pt,MI,IMI,2
 95,processed_ptb/095/s0377lre/beat2.pt,MI,IMI,2
@@ -39242,7 +39200,6 @@ patient_number,pt_path,label,subtype,fold
 96,processed_ptb/096/s0381lre/beat163.pt,MI,ALMI,0
 96,processed_ptb/096/s0381lre/beat164.pt,MI,ALMI,0
 96,processed_ptb/096/s0381lre/beat165.pt,MI,ALMI,0
-96,processed_ptb/096/s0381lre/beat166.pt,MI,ALMI,0
 96,processed_ptb/096/s0385lre/beat0.pt,MI,ALMI,0
 96,processed_ptb/096/s0385lre/beat1.pt,MI,ALMI,0
 96,processed_ptb/096/s0385lre/beat2.pt,MI,ALMI,0
@@ -44080,7 +44037,6 @@ patient_number,pt_path,label,subtype,fold
 150,processed_ptb/150/s0287lre/beat125.pt,Healthy,0,4
 150,processed_ptb/150/s0287lre/beat126.pt,Healthy,0,4
 150,processed_ptb/150/s0287lre/beat127.pt,Healthy,0,4
-150,processed_ptb/150/s0287lre/beat128.pt,Healthy,0,4
 155,processed_ptb/155/s0301lre/beat0.pt,Healthy,0,0
 155,processed_ptb/155/s0301lre/beat1.pt,Healthy,0,0
 155,processed_ptb/155/s0301lre/beat2.pt,Healthy,0,0
@@ -44564,7 +44520,6 @@ patient_number,pt_path,label,subtype,fold
 165,processed_ptb/165/s0322lre/beat108.pt,Healthy,0,1
 165,processed_ptb/165/s0322lre/beat109.pt,Healthy,0,1
 165,processed_ptb/165/s0322lre/beat110.pt,Healthy,0,1
-165,processed_ptb/165/s0322lre/beat111.pt,Healthy,0,1
 165,processed_ptb/165/s0323lre/beat0.pt,Healthy,0,1
 165,processed_ptb/165/s0323lre/beat1.pt,Healthy,0,1
 165,processed_ptb/165/s0323lre/beat2.pt,Healthy,0,1
@@ -44676,7 +44631,6 @@ patient_number,pt_path,label,subtype,fold
 165,processed_ptb/165/s0323lre/beat108.pt,Healthy,0,1
 165,processed_ptb/165/s0323lre/beat109.pt,Healthy,0,1
 165,processed_ptb/165/s0323lre/beat110.pt,Healthy,0,1
-165,processed_ptb/165/s0323lre/beat111.pt,Healthy,0,1
 166,processed_ptb/166/s0275lre/beat0.pt,Healthy,0,0
 166,processed_ptb/166/s0275lre/beat1.pt,Healthy,0,0
 166,processed_ptb/166/s0275lre/beat2.pt,Healthy,0,0
@@ -48933,7 +48887,6 @@ patient_number,pt_path,label,subtype,fold
 233,processed_ptb/233/s0458_re/beat113.pt,Healthy,0,4
 233,processed_ptb/233/s0458_re/beat114.pt,Healthy,0,4
 233,processed_ptb/233/s0458_re/beat115.pt,Healthy,0,4
-233,processed_ptb/233/s0458_re/beat116.pt,Healthy,0,4
 233,processed_ptb/233/s0459_re/beat0.pt,Healthy,0,4
 233,processed_ptb/233/s0459_re/beat1.pt,Healthy,0,4
 233,processed_ptb/233/s0459_re/beat2.pt,Healthy,0,4
@@ -49181,8 +49134,6 @@ patient_number,pt_path,label,subtype,fold
 233,processed_ptb/233/s0482_re/beat123.pt,Healthy,0,4
 233,processed_ptb/233/s0482_re/beat124.pt,Healthy,0,4
 233,processed_ptb/233/s0482_re/beat125.pt,Healthy,0,4
-233,processed_ptb/233/s0482_re/beat126.pt,Healthy,0,4
-233,processed_ptb/233/s0482_re/beat127.pt,Healthy,0,4
 233,processed_ptb/233/s0483_re/beat0.pt,Healthy,0,4
 233,processed_ptb/233/s0483_re/beat1.pt,Healthy,0,4
 233,processed_ptb/233/s0483_re/beat2.pt,Healthy,0,4
@@ -49412,7 +49363,6 @@ patient_number,pt_path,label,subtype,fold
 234,processed_ptb/234/s0460_re/beat104.pt,Healthy,0,4
 234,processed_ptb/234/s0460_re/beat105.pt,Healthy,0,4
 234,processed_ptb/234/s0460_re/beat106.pt,Healthy,0,4
-234,processed_ptb/234/s0460_re/beat107.pt,Healthy,0,4
 235,processed_ptb/235/s0461_re/beat0.pt,Healthy,0,4
 235,processed_ptb/235/s0461_re/beat1.pt,Healthy,0,4
 235,processed_ptb/235/s0461_re/beat2.pt,Healthy,0,4
@@ -50038,7 +49988,6 @@ patient_number,pt_path,label,subtype,fold
 237,processed_ptb/237/s0465_re/beat118.pt,Healthy,0,2
 237,processed_ptb/237/s0465_re/beat119.pt,Healthy,0,2
 237,processed_ptb/237/s0465_re/beat120.pt,Healthy,0,2
-237,processed_ptb/237/s0465_re/beat121.pt,Healthy,0,2
 238,processed_ptb/238/s0466_re/beat0.pt,Healthy,0,2
 238,processed_ptb/238/s0466_re/beat1.pt,Healthy,0,2
 238,processed_ptb/238/s0466_re/beat2.pt,Healthy,0,2
@@ -52327,7 +52276,6 @@ patient_number,pt_path,label,subtype,fold
 251,processed_ptb/251/s0506_re/beat149.pt,Healthy,0,4
 251,processed_ptb/251/s0506_re/beat150.pt,Healthy,0,4
 251,processed_ptb/251/s0506_re/beat151.pt,Healthy,0,4
-251,processed_ptb/251/s0506_re/beat152.pt,Healthy,0,4
 252,processed_ptb/252/s0487_re/beat0.pt,Healthy,0,3
 252,processed_ptb/252/s0487_re/beat1.pt,Healthy,0,3
 252,processed_ptb/252/s0487_re/beat2.pt,Healthy,0,3
@@ -53469,7 +53417,6 @@ patient_number,pt_path,label,subtype,fold
 267,processed_ptb/267/s0504_re/beat106.pt,Healthy,0,0
 267,processed_ptb/267/s0504_re/beat107.pt,Healthy,0,0
 267,processed_ptb/267/s0504_re/beat108.pt,Healthy,0,0
-267,processed_ptb/267/s0504_re/beat109.pt,Healthy,0,0
 268,processed_ptb/268/s0505_re/beat0.pt,MI,ILMI,3
 268,processed_ptb/268/s0505_re/beat1.pt,MI,ILMI,3
 268,processed_ptb/268/s0505_re/beat2.pt,MI,ILMI,3
@@ -53937,7 +53884,6 @@ patient_number,pt_path,label,subtype,fold
 274,processed_ptb/274/s0512_re/beat106.pt,MI,ILMI,3
 274,processed_ptb/274/s0512_re/beat107.pt,MI,ILMI,3
 274,processed_ptb/274/s0512_re/beat108.pt,MI,ILMI,3
-274,processed_ptb/274/s0512_re/beat109.pt,MI,ILMI,3
 276,processed_ptb/276/s0526_re/beat0.pt,Healthy,0,1
 276,processed_ptb/276/s0526_re/beat1.pt,Healthy,0,1
 276,processed_ptb/276/s0526_re/beat2.pt,Healthy,0,1
@@ -55818,7 +55764,6 @@ patient_number,pt_path,label,subtype,fold
 293,processed_ptb/293/s0557_re/beat133.pt,MI,ALMI,1
 293,processed_ptb/293/s0557_re/beat134.pt,MI,ALMI,1
 293,processed_ptb/293/s0557_re/beat135.pt,MI,ALMI,1
-293,processed_ptb/293/s0557_re/beat136.pt,MI,ALMI,1
 293,processed_ptb/293/s0558_re/beat0.pt,MI,ALMI,1
 293,processed_ptb/293/s0558_re/beat1.pt,MI,ALMI,1
 293,processed_ptb/293/s0558_re/beat2.pt,MI,ALMI,1
@@ -55962,7 +55907,6 @@ patient_number,pt_path,label,subtype,fold
 293,processed_ptb/293/s0558_re/beat140.pt,MI,ALMI,1
 293,processed_ptb/293/s0558_re/beat141.pt,MI,ALMI,1
 293,processed_ptb/293/s0558_re/beat142.pt,MI,ALMI,1
-293,processed_ptb/293/s0558_re/beat143.pt,MI,ALMI,1
 294,processed_ptb/294/s0559_re/beat0.pt,MI,IMI,3
 294,processed_ptb/294/s0559_re/beat1.pt,MI,IMI,3
 294,processed_ptb/294/s0559_re/beat2.pt,MI,IMI,3
