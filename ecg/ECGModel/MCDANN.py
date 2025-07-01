@@ -49,7 +49,7 @@ class DenseBlock(nn.Module):
 class TransitionLayer(nn.Module):
     def __init__(self, in_channels, out_channels=64):
         super().__init__()
-        self.lrelu = nn.LeakyReLU(negative_slope=0.01)
+        self.conv = nn.Conv1d(in_channels, out_channels, kernel_size=1)
         self.pool = nn.AvgPool1d(kernel_size=2, stride=2)
 
     def forward(self, x):
