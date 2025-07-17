@@ -6,7 +6,6 @@ from torch.utils.data import random_split
 from fold import iterate_fold
 from lightning.pytorch.callbacks import StochasticWeightAveraging
 from ECGDataLoader import ECGDataLoader
-# from MCDANN import MCDANN
 import importlib
 import torch
 import random
@@ -22,8 +21,10 @@ def main():
     num_classes = 2
     label_file = 'ptb_fold.csv'
     data_dir = '../'
-    split_ratio = 0.8   
-    model_name = 'MCDANN'  # <-- Set your model class name here
+    split_ratio = 0.8
+    sample_before = 198
+    sample_after = 400
+    model_name = 'MCDANN'  #set model name here
     model_module = importlib.import_module(f'ECGModel.{model_name}')
     ModelClass = getattr(model_module, model_name)
 
@@ -36,7 +37,7 @@ def main():
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-    for current, remaining in iterate_fold([0,1, 2, 3, 4]):
+    for current, remaining in iterate_fold([0, 1, 2, 3, 4]):
 
         dataloader = ECGDataLoader(
             csv_file=label_file,
@@ -45,7 +46,9 @@ def main():
             fold_test=current,
             batch_size=batch_size,
             num_workers=num_workers,
-            split_ratio=split_ratio
+            split_ratio=split_ratio,
+            sample_before=sample_before,
+            sample_after=sample_after
         )
         dataloader.setup()
         
@@ -63,12 +66,11 @@ def main():
             max_epochs=num_epochs,
             accelerator='auto',
             devices=1,
-            callbacks=[checkpoint_callback, StochasticWeightAveraging(swa_lrs=1e-3)]
+            callbacks=[checkpoint_callback, StochasticWeightAveraging(swa_lrs=1e-3)],
         )
 
         trainer.fit(model, dataloader.train_dataloader(), dataloader.val_dataloader())
 
-        # Load best model for testing
         best_model_path = checkpoint_callback.best_model_path
         print("best_model_path", best_model_path)
         model = ModelClass.load_from_checkpoint(best_model_path, num_classes=num_classes, learning_rate=learning_rate)

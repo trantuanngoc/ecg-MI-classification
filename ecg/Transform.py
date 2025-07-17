@@ -20,6 +20,13 @@ def random_shift_1d(tensor, max_shift_percent=0.1, random_seed=30):
 
     return shifted
 
+def roll_1d(tensor, max_shift_percent=0.1):
+    length = tensor.shape[0]
+    max_shift = int(length * max_shift_percent)
+    shift = torch.randint(-max_shift, max_shift + 1, (1,)).item()
+
+    return torch.roll(tensor, shifts=shift, dims=0)
+
 class ComposeTransforms:
     def __init__(self, transforms):
         self.transforms = transforms

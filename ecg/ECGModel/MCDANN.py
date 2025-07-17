@@ -104,8 +104,7 @@ class MCDANNNet(nn.Module):
         )
 
     def forward(self, x):
-        # x shape: (batch, 12, 300)
-        x = x[:, :, 52:652:2] #get 99 samples before rpeak, 200 samples after, downsample a haft
+        x = x[:, :, ::2]  # Downsample 0.5
 
         # Z-score normalization 
         mean = x.mean(dim=2, keepdim=True)  
