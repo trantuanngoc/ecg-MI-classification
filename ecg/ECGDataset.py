@@ -27,7 +27,7 @@ class ECGDataset(Dataset):
         self.info = self.info[self.info["label"].isin(["MI", "Healthy"])].reset_index(drop=True)
 
         valid_mask = (self.info["r_peak_index"] - self.sample_before > 0) & \
-                     (self.info["length"] - self.info["r_peak_index"] + 1 > self.sample_after)
+                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after)
         self.info = self.info[valid_mask].reset_index(drop=True)
         
 
