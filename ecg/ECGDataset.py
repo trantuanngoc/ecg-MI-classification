@@ -26,8 +26,8 @@ class ECGDataset(Dataset):
             self.info = self.info[self.info["fold"].isin(fold_list)].reset_index(drop=True)
         self.info = self.info[self.info["label"].isin(["MI", "Healthy"])].reset_index(drop=True)
 
-        valid_mask = (self.info["r_peak_index"] - self.sample_before > 0) & \
-                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after)
+        valid_mask = (self.info["r_peak_index"] - self.sample_before - 3 > 0) & \
+                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after + 3)
         self.info = self.info[valid_mask].reset_index(drop=True)
         
 
@@ -46,7 +46,9 @@ class ECGDataset(Dataset):
             idx = idx.tolist()
 
         rpeak_index = self.info.iloc[idx, 2]
-        heartbeat = self._load_signal(os.path.join(self.data_dir, self.info.iloc[idx, 1])).t()[:, rpeak_index - self.sample_before:rpeak_index + self.sample_after+1]
+        window_index = self.info.iloc[idx, 7]
+        heartbeat = self._load_signal(os.path.join(self.data_dir, self.info.iloc[idx, 1])).t()\
+            [:, rpeak_index - self.sample_before + window_index:rpeak_index + self.sample_after + 1 + window_index]
         label = self.label_dict[self.info.iloc[idx, 3]]
         patient_number = self.info.iloc[idx, 0]
         if self.transform:
