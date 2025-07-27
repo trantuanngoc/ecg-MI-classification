@@ -180,14 +180,14 @@ class SRT(L.LightningModule):
         return self.model(x)
 
     def training_step(self, batch, batch_idx):
-        x, y, _ = batch
+        x, y = batch
         logits = self(x)
         loss = self.criterion(logits, y)
         self.log('train_loss', loss)
         return loss
 
     def validation_step(self, batch, batch_idx):
-        x, y, _ = batch
+        x, y = batch
         logits = self(x)
         loss = self.criterion(logits, y)
         preds = torch.argmax(logits, dim=1)
@@ -197,7 +197,7 @@ class SRT(L.LightningModule):
         return loss
 
     def test_step(self, batch, batch_idx):
-        x, y, _ = batch
+        x, y = batch
         logits = self(x)
         loss = self.criterion(logits, y)
         preds = torch.argmax(logits, dim=1)
