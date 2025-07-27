@@ -28,8 +28,8 @@ class ECGDataset(Dataset):
             self.info = self.info[self.info["fold"].isin(fold_list)].reset_index(drop=True)
         self.info = self.info[self.info["label"].isin(["MI", "Healthy"])].reset_index(drop=True)
 
-        valid_mask = (self.info["r_peak_index"] - self.sample_before + WINDOW_MIN > 0) & \
-                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after + WINDOW_MAX)
+        valid_mask = (self.info["r_peak_index"] - self.sample_before + self.WINDOW_MIN > 0) & \
+                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after + self.WINDOW_MAX)
         self.info = self.info[valid_mask].reset_index(drop=True)
         
 
