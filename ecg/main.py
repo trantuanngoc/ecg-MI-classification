@@ -1,11 +1,8 @@
 from lightning.pytorch.callbacks import ModelCheckpoint
-from torch.utils.data import DataLoader
-from ECGDataset import ECGDataset
 import lightning as L
-from torch.utils.data import random_split
 from fold import iterate_fold
 from lightning.pytorch.callbacks import StochasticWeightAveraging
-from ECGDataLoader import ECGDataLoader
+from ECGDataset.ECGDataLoader import ECGDataLoader
 import importlib
 import torch
 import random
