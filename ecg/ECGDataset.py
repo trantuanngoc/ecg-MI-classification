@@ -21,13 +21,15 @@ class ECGDataset(Dataset):
         self.label_dict = {"MI": 0, "Healthy": 1}
         self.transform = transform
         self._signal_cache = {} 
+        self.WINDOW_MAX = -3
+        self.WINDOW_MIN = 3
 
         if fold_list is not None:
             self.info = self.info[self.info["fold"].isin(fold_list)].reset_index(drop=True)
         self.info = self.info[self.info["label"].isin(["MI", "Healthy"])].reset_index(drop=True)
 
-        valid_mask = (self.info["r_peak_index"] - self.sample_before - 3 > 0) & \
-                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after + 3)
+        valid_mask = (self.info["r_peak_index"] - self.sample_before + WINDOW_MIN > 0) & \
+                     (self.info["length"] > self.info["r_peak_index"] + 1 + self.sample_after + WINDOW_MAX)
         self.info = self.info[valid_mask].reset_index(drop=True)
         
 
