@@ -2,7 +2,7 @@ from torch.utils.data import  DataLoader, random_split
 import lightning as L
 import torchvision.transforms as transforms  
 from Transform import random_shift_1d, ComposeTransforms, roll_1d
-from .ECGDataset import ECGDataset
+from ECGDataset import ECGDataset
 
 class ECGDataLoader(L.LightningDataModule):
     def __init__(self, csv_file, data_dir,fold_train,fold_test, batch_size, num_workers, split_ratio=0.9, sample_before=100, sample_after=100):
