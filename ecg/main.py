@@ -10,11 +10,14 @@ import importlib
 import torch
 import random
 import numpy as np
+import json
+import os
+from datetime import datetime
 
 def main():
-    batch_size = 64
-    num_workers = 12
-    num_epochs = 12
+    batch_size = 256 
+    num_workers = 2
+    num_epochs = 15
     learning_rate = 1e-3
     val_metric = 'val_acc'
     mode = 'max'
@@ -37,6 +40,18 @@ def main():
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
+
+            # === Create run folder ===
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_dir = os.path.join("runs", timestamp)
+    os.makedirs(run_dir, exist_ok=True)
+    checkpoints_dir = os.path.join(run_dir, "checkpoints")
+    os.makedirs(checkpoints_dir, exist_ok=True)
+
+    print(f"\n📂 Results and checkpoints will be saved in: {run_dir}\n")
+
+    all_results = {}
+
     for current, remaining in iterate_fold([0, 1, 2, 3, 4]):
 
         dataloader = ECGDataLoader(
@@ -55,7 +70,7 @@ def main():
         model = ModelClass(num_classes=num_classes, learning_rate=learning_rate)
 
         checkpoint_callback = ModelCheckpoint(
-                    dirpath='checkpoints/',
+                    dirpath=checkpoints_dir,
                     filename=f'{current}-ecg-{{epoch:02d}}-{{{val_metric}:.4f}}',
                     save_top_k=1,
                     monitor=val_metric,
@@ -74,7 +89,38 @@ def main():
         best_model_path = checkpoint_callback.best_model_path
         print("best_model_path", best_model_path)
         model = ModelClass.load_from_checkpoint(best_model_path, num_classes=num_classes, learning_rate=learning_rate)
-        trainer.test(model, dataloader.test_dataloader()) 
+        # Test
+        test_results = trainer.test(model, dataloader.test_dataloader())
+
+        # Pretty print
+        print(f"\n✅ Test results for fold {current}:")
+        for k, v in test_results[0].items():
+            print(f"{k}: {v:.4f}")
+
+        # Save into the big dictionary
+        all_results[f"fold_{current}"] = test_results[0]
+
+    # Save all results in a single JSON file
+    all_results_file = os.path.join(run_dir, "all_folds_test_results.json")
+    with open(all_results_file, "w") as f:
+        json.dump(all_results, f, indent=4)
+
+    note_path = os.path.join(run_dir, "note.txt")    
+
+    with open (note_path, "w") as note_file:
+        note_file.write("Crop -> Augment -> Downsample -> Normalize\n")
+        # note_file.write("No augment")
+        note_file.write('batch: 256, epoch=15')
+        note_file.write("""
+BaselineWander(prob=0.5, C=0.0001),
+GaussianNoise(prob=0.5, scale=0.0001),
+PowerlineNoise(prob=0.5, C=0.0001),
+ChannelResize(magnitude_range=(0.5, 2.0)),
+BaselineShift(prob=0.5, scale=0.01),
+""")
+        
+
+    print(f"\n📄 All test results saved to: {all_results_file}\n")
 
 if __name__ == '__main__':
     main()
